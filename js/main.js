@@ -262,7 +262,7 @@ function enviarFormulario() {
     });
 
     let refrigerante = document.getElementById('refrigerante').value;
-    let mensagem = document.getElementById('mensagem').value;
+    let mensagem = document.getElementById('observacao').value;
     let espaco = ' ';
     let quebra = '%0A';
     let numero = 5541988868087;
