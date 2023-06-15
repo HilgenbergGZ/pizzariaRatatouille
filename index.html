@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./main.css">
+    <title>Pizzaria Ratatouille</title>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fs-3">Pizzaria Ratatouille</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex text-start">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-restaurante" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o restaurante
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <button class="nav-link btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">
+                            <i class="bi bi-cart3 me-1 faca-seu-pedido-alinhamento"></i>
+                            Faça seu pedido
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <!--Sobre o restaurante-->
+        <section id="sobre-o-restaurante">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/slides/slide2.jpg" alt="Pizza">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/slide1.jpg" alt="hamburguer com molho e batata rústica">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/slide3.jpg" alt="Prateleira com bebidas">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/pizzaria.jpg" class="d-block w-100 rounded"
+                                alt="Foto externa das mesas de uma pizzaria ou restaurante">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
+                            <p>
+                                A pizzaria Ratatouille é um autêntico paraíso gastronômico para os amantes de pizza.
+                                Cada fatia é uma explosão de sabores. Nossa equipe dedicada e apaixonada pela
+                                culinária garante que cada pizza seja preparada com ingredientes frescos e de alta
+                                qualidade. Venha experimentar a excelência de uma pizza saborosa em um ambiente
+                                acolhedor e encantador, onde a tradição se encontra com a criatividade.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                A pizzaria Ratatouille é um local acolhedor que oferece muito mais do que deliciosas
+                                pizzas. Aqui, você pode desfrutar de uma experiência única, assistindo aos
+                                jogos de CSGO ao vivo enquanto saboreia suas fatias favoritas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim da seção sobre o restaurante-->
+
+        <!--Seção sobre eventos-->
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">
+                        Confira <span class="text-colored">nossos eventos</span>
+                    </h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./images/eventos/aniversario.jpg" alt="cupcakes com velinhas"
+                            class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4 mb-2 mt-3">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversários
+                        </h3>
+                        <p class="mb-4">
+
+                            Oferecemos reservas especiais para aniversários, criando um ambiente festivo e acolhedor
+                            para desfrutar de deliciosas pizzas. Nossa equipe está pronta para atender às necessidades
+                            do evento, garantindo uma experiência personalizada e memorável.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/eventos/musicaaovivo.jpg" alt="mesas com decoração para casamento"
+                            class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4 mb-2 mt-3">
+                            <i class="bi bi-music-note-beamed"></i>
+                            Curta músicas ao vivo
+                        </h3>
+                        <p class="mb-4">
+
+                            Delicie-se com música ao vivo enquanto saboreia nossas pizzas. Ambiente envolvente, artistas
+                            talentosos, momentos memoráveis. A combinação perfeita entre boa comida e boa música. Venha
+                            viver essa experiência única conosco.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/eventos/csgobar.jpg" alt="pessoas brindando com taças"
+                            class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4 mb-2 mt-3">
+                            <i class="bi bi-people-fill"></i>
+                            Para fãs do E-sports
+                        </h3>
+                        <p class="mb-4">
+                            Aprecie E-sports enquanto desfruta de nossas pizzas. Transmissões emocionantes, competições
+                            acirradas, ambiente animado. A combinação ideal para os fãs de jogos eletrônicos. Junte-se a
+                            nós e vivencie a emoção dos E-sports.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim da seção sobre eventos-->
+
+        <!--Seção sobre o cardápio-->
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nosso <span class="text-colored">cardápio</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool"
+                                class="fw-bold text-start nav-link text-colored active">Sucos únicos naturais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas"
+                                class="fw-bold text-start nav-link text-colored">Bebidas alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#menuPizzas"
+                                class="fw-bold text-start nav-link text-colored">Pizzas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#menuLanches"
+                                class="fw-bold text-start nav-link text-colored">Lanches</button>
+                            <!--<button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas"
+                                class="fw-bold text-start nav-link text-colored">Sobremesas</button>-->
+                        </nav>
+                    </aside>
+
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco.jpg"
+                                            alt="Coca-cola">
+                                        <h5 class="text-colored fw-bold mt-2">Suco de Laranja</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco2.jpg" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Limão & hortelã</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco3.jpg"
+                                            alt="Coca-cola">
+                                        <h5 class="text-colored fw-bold mt-2">Melolimão Fresh</h5>
+                                        <p>Melão, limão e hortelã Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco4.jpg" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Tri-Frutíssima</h5>
+                                        <p>Acerola, laranja e maçã Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco5.jpg"
+                                            alt="Coca-cola">
+                                        <h5 class="text-colored fw-bold mt-2">Maraná Bliss</h5>
+                                        <p>Maracujá e manga Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco6.jpg" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Limão e erva-doce</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco7.jpg" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Apple Twist</h5>
+                                        <p>Goiaba e maçã Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco8.jpg" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Ginger Happy</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco9.jpg" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">RedBerry Bliss</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco14.jpg"
+                                            alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">PurpleBerry Bliss</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco10.jpg"
+                                            alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Moranja Cítrico & Abacaxi</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco11.jpg"
+                                            alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Moranja Cítrico</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco12.jpg"
+                                            alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Maracaxi Tropical</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco13.jpg"
+                                            alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Melangolã</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco15.jpg"
+                                            alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Vitalidade de Cenoura</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/suco16.jpg"
+                                            alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">Vitalidade de Kiwi & Uva</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/drink1.webp"
+                                            alt="Cerveja">
+                                        <h5 class="text-colored fw-bold mt-2">Jeanne</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/drink3.webp"
+                                            alt="Vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Caipirinha de frutas vermelhas</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/drink9.webp"
+                                            alt="Vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Mojito com cachaça</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/bebidas/drink6.webp"
+                                            alt="Vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Gin tônica</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="menuPizzas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/pizza.jpg" alt="Nome da entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Americana</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/pizza.jpg" alt="Nome da entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Portuguesa</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/pizza.jpg" alt="Nome da entrada">
+                                        <h5 class="text-colored fw-bold mt-2">4 queijos</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/pizza.jpg" alt="Nome da entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Pepperoni</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/pizza.jpg" alt="Nome da entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Havaiana</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="menuLanches">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://via.placeholder.com/150x150"
+                                            alt="placeholder">
+                                        <h5 class="text-colored fw-bold mt-2">Em breve</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://via.placeholder.com/150x150"
+                                            alt="placeholder">
+                                        <h5 class="text-colored fw-bold mt-2">Em breve</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://via.placeholder.com/150x150"
+                                            alt="placeholder">
+                                        <h5 class="text-colored fw-bold mt-2">Em breve</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://via.placeholder.com/150x150"
+                                            alt="placeholder">
+                                        <h5 class="text-colored fw-bold mt-2">Em breve</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://via.placeholder.com/150x150"
+                                            alt="placeholder">
+                                        <h5 class="text-colored fw-bold mt-2">Em breve</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://via.placeholder.com/150x150"
+                                            alt="placeholder">
+                                        <h5 class="text-colored fw-bold mt-2">Em breve</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/sobremesas/bolo.jpg"
+                                            alt="Bolo de chocolate">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/sobremesas/cupcake.jpg"
+                                            alt="Cupcake">
+                                        <h5 class="text-colored fw-bold mt-2">Cupcake</h5>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim da seção sobre o cardápio-->
+
+        <!--Início da seção fale conosco-->
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section title-text text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" name="nome" id="nome" class="form-control cor-da-borda">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" name="email" id="email" class="form-control cor-da-borda">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone</label>
+                                <input type="tel" name="telefone" id="telefone" class="form-control cor-da-borda">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control cor-da-borda" name="mensagem" id="mensagem"></textarea>
+                            </div>
+                            <button typ="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua: Pizza Ratatouille, n° 1306, bairro Tudebom - Curitiba - PR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim da seção fale conosco-->
+
+        <!--Seção faça seu pedido-->
+        <div class="modal fade zoom-effect" id="exemplo-modal" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <section id="opcoes" class="pt-1 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="modal-header">
+                                    <h5 class="section-title text-center mb-0 h3">Faça seu pedido</h5>
+                                    <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                                </div>
+                            </div>
+                            <div class="row d-flex">
+                                <nav class="nav nav-pills flex-row">
+                                    <div class="btn-group d-flex justify-content-center" role="group"
+                                        aria-label="Escolha uma imagem">
+                                        <div class="col-5">
+                                            <h4 class="mt-2">Pizza</h4>
+                                            <button type="button" data-bs-toggle="tab" data-bs-target="#opcaoPizza"
+                                                class="btn btn-outline-primary customizacaoBtn active">
+                                                <img src="./images/opcao1.jpg" alt="Foto de uma pizza"
+                                                    class="img-fluid">
+                                            </button>
+                                        </div>
+                                        <div class="col-5">
+                                            <h4 class="mt-2">Hamburguer</h4>
+                                            <button type="button" data-bs-toggle="tab" data-bs-target="#opcaoHamburguer"
+                                                class="btn btn-outline-primary customizacaoBtn">
+                                                <img src="./images/opcao2.jpg"
+                                                    alt="Foto de um hamburguer com batata rústica" class="img-fluid">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <div class="col-md-12">
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="opcaoHamburguer">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <form class="w-100 text-center mt-5">
+                                                        <p>Em breve!</p>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="opcaoPizza">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <form class="w-100">
+                                                        <div class="mb-2 mt-5">
+                                                            <label for="tamanho"
+                                                                class="form-label fw-bold text-colored">Escolha o
+                                                                tamanho</label>
+                                                            <select class="form-control cor-da-borda" name="tamanho"
+                                                                id="tamanho">
+                                                                <option id="pequena" value="pequena">Pequena (1 sabor
+                                                                    apenas)</option>
+                                                                <option id="media" value="media" selected>Média (até 2
+                                                                    sabores)</option>
+                                                                <option id="grande" value="grande">Grande (até 2
+                                                                    sabores)</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="qntSabores"
+                                                                class="form-label fw-bold text-colored">Quantos
+                                                                sabores?</label>
+                                                            <input type="number" name="qntSabores" id="qntSabores"
+                                                                class="form-control cor-da-borda qntPizzasCustom">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="qntPizzas"
+                                                                class="form-label fw-bold text-colored">Quantas
+                                                                pizzas?</label>
+                                                            <input type="number" name="qntPizzas" id="qntPizzas"
+                                                                class="form-control cor-da-borda qntPizzasCustom">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <ul class="list-unstyled">
+                                                                <li class="mb-3">
+                                                                    <div class="d-flex align-items-end">
+                                                                        <div class="flex-column">
+                                                                            <strong
+                                                                                class="align-items-center">Americana</strong>
+                                                                            <p>IngredienteA IngredienteB IngredienteC
+                                                                            </p>
+                                                                            <div class="price">
+                                                                                <p>R$34,90</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="image-container">
+                                                                            <img src="./images/pizza.jpg" alt="pizza">
+                                                                            <div class="icons">
+                                                                                <i type="button"
+                                                                                    class="fa-sharp fa-solid fa-plus fa-xl adicionar"></i>
+                                                                                <input type="number" name="quantidade"
+                                                                                    class="quantidade qtyBox"
+                                                                                    id="qtyBox" readonly="" value="0">
+                                                                                <i
+                                                                                    class="fa-sharp fa-solid fa-minus fa-xl subtrair"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <div class="d-flex align-items-end">
+                                                                        <div class="flex-column">
+                                                                            <strong>Portuguesa</strong>
+                                                                            <p>IngredienteA IngredienteB IngredienteC
+                                                                            </p>
+                                                                            <div class="price">
+                                                                                <p>R$34,90</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="image-container">
+                                                                            <img src="./images/pizza.jpg" alt="pizza">
+                                                                            <div class="icons">
+                                                                                <i
+                                                                                    class="fa-sharp fa-solid fa-plus fa-xl adicionar"></i>
+                                                                                <input type="number" name="quantidade"
+                                                                                    class="quantidade qtyBox"
+                                                                                    readonly="" value="0">
+                                                                                <i
+                                                                                    class="fa-sharp fa-solid fa-minus fa-xl subtrair"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <div class="d-flex align-items-end">
+                                                                        <div class="flex-column">
+                                                                            <strong>Quatro queijos</strong>
+                                                                            <p>IngredienteA IngredienteB IngredienteC
+                                                                            </p>
+                                                                            <div class="price">
+                                                                                <p>R$34,90</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="image-container">
+                                                                            <img src="./images/pizza.jpg" alt="pizza">
+                                                                            <div class="icons">
+                                                                                <i
+                                                                                    class="fa-sharp fa-solid fa-plus fa-xl adicionar"></i>
+                                                                                <input type="number" name="quantidade"
+                                                                                    class="quantidade qtyBox"
+                                                                                    readonly="" value="0">
+                                                                                <i
+                                                                                    class="fa-sharp fa-solid fa-minus fa-xl subtrair"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <div class="d-flex align-items-end">
+                                                                        <div class="flex-column">
+                                                                            <strong>Pepperoni</strong>
+                                                                            <p>IngredienteA IngredienteB IngredienteC
+                                                                            </p>
+                                                                            <div class="price">
+                                                                                <p>R$34,90</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="image-container">
+                                                                            <img src="./images/pizza.jpg" alt="pizza">
+                                                                            <div class="icons">
+                                                                                <i
+                                                                                    class="fa-sharp fa-solid fa-plus fa-xl adicionar"></i>
+                                                                                <input type="number" name="quantidade"
+                                                                                    class="quantidade qtyBox"
+                                                                                    readonly="" value="0">
+                                                                                <i
+                                                                                    class="fa-sharp fa-solid fa-minus fa-xl subtrair"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <div class="d-flex align-items-end">
+                                                                        <div class="flex-column">
+                                                                            <strong>Havaiana</strong>
+                                                                            <p>IngredienteA IngredienteB IngredienteC
+                                                                            </p>
+                                                                            <div class="price">
+                                                                                <p>R$34,90</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="image-container">
+                                                                            <img src="./images/pizza.jpg" alt="pizza">
+                                                                            <div class="icons">
+                                                                                <i
+                                                                                    class="fa-sharp fa-solid fa-plus fa-xl adicionar"></i>
+                                                                                <input type="number" name="quantidade"
+                                                                                    class="quantidade qtyBox"
+                                                                                    readonly="" value="0">
+                                                                                <i
+                                                                                    class="fa-sharp fa-solid fa-minus fa-xl subtrair"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="nomePedido"
+                                                                class="form-label fw-bold text-colored">Seu nome</label>
+                                                            <input type="text" name="nomePedido" id="nomePedido"
+                                                                class="form-control cor-da-borda">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="refrigerante"
+                                                                class="form-label fw-bold text-colored">Escolha o
+                                                                refrigerante</label>
+                                                            <select class="form-control cor-da-borda"
+                                                                name="refrigerante" id="refrigerante">
+                                                                <option id="semRefrigerante" value="semRefrigerante">Não
+                                                                    precisa de refrigerante</option>
+                                                                <option id="coca-cola" value="coca-cola">Cola-cola 2l
+                                                                    <span>R$10,00</span>
+                                                                </option>
+                                                                <option id="fantaLaranja" value="fantaLaranja">Fanta
+                                                                    laranja 2l <span>R$10,00</span></option>
+                                                                <option id="guarana" value="guarana">Guaraná 2l
+                                                                    <span>R$10,00</span>
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="qntRefri"
+                                                                class="form-label fw-bold text-colored">Quantos
+                                                                refrigerantes?</label>
+                                                            <input type="text" name="qntRefri" id="qntRefri"
+                                                                class="form-control cor-da-borda">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="observacao"
+                                                                class="form-label fw-bold text-colored">Alguma
+                                                                observação?</label>
+                                                            <textarea class="form-control cor-da-borda"
+                                                                name="observacao" id="observacao"></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="opcaoHamburguer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="modal-footer sticky-bottom custom-footer">
+                        <button id="send" type="button" class="btn btn-success" data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--esse Input que armazena a quantidade de pizzas que podem ser selecionadas-->
+        <input type="number" name="saboresxpizza" id="saboresxpizza" class="esconder-elemento">
+        <!--Fim da seção faça seu pedido-->
+    </div>
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Jquery-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/670193471c.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

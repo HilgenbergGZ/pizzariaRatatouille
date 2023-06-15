@@ -1,0 +1,207 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #ffbe0b;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #ffbe0b;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+/*.navbar-toggler {
+    background-color: #8338ec;
+}*/
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav.nav-pills {
+    margin-top: 10px;
+}
+
+.section-title {
+    font-family: Pacifico, cursive;
+}
+
+#sobre-o-restaurante,
+#cardapio {
+    background-color: #ffeae6;
+}
+
+.text-colored {
+    color: #ffbe0b;
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    height: 772px;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: #ffbe0b;
+    color: #fff;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #ffbe0b
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+
+/*Personalização das cores do menu "fale conosco"*/
+input.error,
+textarea.error {
+    border: 2px solid rgba(189, 9, 9, 0.438);
+}
+
+form .cor-da-borda.error:focus {
+    outline: 1px solid rgb(184, 23, 23);
+    box-shadow: 0 0 8px rgb(184, 23, 23);
+    border: 1px solid rgb(184, 23, 23);
+}
+
+label {
+    color: rgb(184, 23, 23);
+}
+
+textarea {
+    resize: none;
+}
+
+form .cor-da-borda:focus {
+    border-color: #ffbe0b;
+    box-shadow: 0 0 8px #ffbe0b;
+}
+
+form .cor-da-borda {
+    transition: 0.3s;
+}
+/*fim da personalização das cores do menu "fale conosco"*/
+
+/*Personalização do modal*/
+.modal-content img {
+    max-width: 100%;
+    width: 200px;
+    height: 149px;
+    margin: 4px;
+}
+
+.modal-content .customizacaoBtn {
+    padding: 0;
+    margin: 0 2px;
+    border: none;
+}
+
+.modal-content .customizacaoBtn:hover {
+    background-color: #ffbe0b;
+}
+
+.nav.nav-pills {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-outline-primary {
+    --bs-btn-active-bg: #ffbe0b;
+}
+
+.fa-classic, .fa-regular, .fa-solid, .far, .fas {
+    color: rgb(1, 77, 1);
+    cursor: pointer;
+}
+
+input.quantidade {
+    max-width: 14%;
+    height: 24px;
+    border-color: rgb(1, 77, 1);
+    box-shadow: 0 0 rgb(1, 77, 1);
+    color:rgb(1, 77, 1);
+    text-align: center;
+    border-radius: 10%;
+}
+
+input.quantidade[type=number]::-webkit-inner-spin-button,
+input.qntPizzasCustom[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+.esconder-elemento {
+    visibility: hidden;
+    display: none;
+}
+
+.modal-footer.modal-footer-fixed-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.custom-footer {
+    border: none;
+}
+/*Fim da personalização do modal*/
+
+
+/*Ajustes para mobile*/
+button.nav-link.btn {
+    display: flex;
+    text-align: center;
+} 
+/*Fim dos ajustes para mobile*/
+
+/*Efeito de zoom do modal*/
+.zoom-effect .modal-dialog {
+    transform: scale(0.1);
+    animation: zoomIn 0.4s;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/*Fim do efeito de zoom do modal*/
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
+
+.modal-content img {
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .carousel-item img {
+        height: 350px;
+    }
+}
